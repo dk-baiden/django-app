@@ -77,6 +77,8 @@ MIDDLEWARE = [
   
 ]
 
+
+
 ROOT_URLCONF = 'backend.urls'
 
 TEMPLATES = [
@@ -151,6 +153,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 MEDIA_ROOT= BASE_DIR/'media_cdn/' 
-
+STATIC_ROOT= BASE_DIR/'staticfiles/' 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL="/media/"
