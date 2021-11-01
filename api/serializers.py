@@ -36,7 +36,7 @@ class UserProfileSerializer(serializers.ModelSerializer):
 
 class AppSerializer(serializers.ModelSerializer):
  	
- 
+ owner = UserProfileSerializer(many=False,read_only=False)
  class Meta:
 		model = AppsModel
 		fields = ['name','owner']
