@@ -14,8 +14,8 @@ urlpatterns = [
  	
  	path('login/',  obtain_auth_token, name="login"),
     path('users/',UserList.as_view(),name="userlist"),
-    path('users/<str:username>/',UserDetail.as_view(),name="userlist"),
+    path('users/<str:username>/',UserDetail.as_view(),name="user"),
     path('apps/',AppList.as_view(),name="apps"),
-    path('apps/<str:name>/',AppDetail.as_view(),name="apps")
+    path('apps/<str:name>/',AppDetail.as_view(),name="app")
    
 ]
